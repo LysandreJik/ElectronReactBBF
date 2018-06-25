@@ -1,0 +1,22 @@
+{
+  "name": "electron-react-bbf",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "launchelectron" : "concurrently --kill-others \"yarn run start\" \"yarn run electron\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0"
+  }
+}
