@@ -1,5 +1,5 @@
 body{
-    background-color: #222222;
+    background-color: #1a1a1d;
 }
 
 
@@ -18,7 +18,7 @@ body{
 
 .login input[type=password]{
     border: none;
-    background-color: #222222;
+    background-color: #1a1a1d;
     border-bottom: 1px dashed white;
     margin-top: 20px;
     margin-bottom: 20px;
