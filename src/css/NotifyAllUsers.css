@@ -1,0 +1,26 @@
+
+.notify-all-users{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "Uni";
+    text-align: left;
+    font-size: 3.7vh;
+    width: 80%;
+    color: white;
+}
+
+.notify-all-users input[type=text]{
+    border: none;
+    background-color: #1a1a1d;
+    border-bottom: 1px dashed white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 5vh;
+    font-family: "Uni";
+    font-style: italic;
+    color: white;
+}
