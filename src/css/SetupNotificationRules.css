@@ -1,0 +1,32 @@
+
+.setup-notification-rules{
+    align-items: center;
+    font-family: "Uni";
+    font-size: 3.7vh;
+    width: calc(100% - 100px);
+    color: white;
+    padding: 50px;
+}
+
+
+.setup-notification-rules-rules{
+    font-size: 85%;
+    color: #C3073F;
+    font-style: italic;
+}
+
+.alert{
+    font-size: 70%;
+}
+
+.setup-notification-rules input[type=text]{
+    border: none;
+    background-color: #1a1a1d;
+    border-bottom: 1px dashed white;
+    width: 40%;
+    font-family: "Uni";
+    font-size: 2.5vh;
+    font-style: italic;
+    color: white;
+    margin: 20px;
+}

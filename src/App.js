@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import './App.css';
 import './css/bttn.css';
+import './css/animate.css';
 import Login from "./components/Login";
 import Notify from "./components/Notify";
 import NotifyAllUsers from "./components/NotifyAllUsers";
 import SetupNotificationRules from "./components/SetupNotificationRules";
+import {BackArrow} from "./components/Utils";
 
 const screens = {
     login: 0,
@@ -17,7 +19,7 @@ class App extends Component {
     constructor(){
         super();
 
-        this.state = {currentScreen: screens.notify};
+        this.state = {currentScreen: screens.setupNotificationRules};
 
         this.login = this.login.bind(this);
         this.notifyAllUsers = this.notifyAllUsers.bind(this);
@@ -54,12 +56,14 @@ class App extends Component {
             return (
                 <div className="App">
                     <NotifyAllUsers/>
+                    <BackArrow onClick={this.login} scale={"1_3"}/>
                 </div>
             );
         }else if(this.state.currentScreen === screens.setupNotificationRules){
             return (
                 <div className="App">
                     <SetupNotificationRules/>
+                    <BackArrow onClick={this.login} scale={"1_3"}/>
                 </div>
             );
         }
